@@ -1,5 +1,5 @@
 #!/bin/sh
-export ANDROID_NDK_ROOT=$NDK_ROOT
+export ANDROID_NDK_ROOT=$NDK_HOME
 #export MOBILE_PAY_TRUNK=$(cd "$(dirname "$0")";cd ..;cd ..; pwd)
 export MOBILE_PAY_TRUNK=$(cd "$(dirname "$0")";cd ..;pwd)
 #SO_NAME=libucpayplugin.so
@@ -12,7 +12,7 @@ export MOBILE_PAY_TRUNK=$(cd "$(dirname "$0")";cd ..;pwd)
 #ɾ���ʧ�Ķ�̬��
 echo "clean the midlle files...."
 #rm  -rf $MOBILE_PAY_TRUNK/obj
-#rm  -rf $MOBILE_PAY_TRUNK/libs/armeabi/libhello.so
+#rm  -rf $MOBILE_PAY_TRUNK/libs/armeabi/libwallet_check.so
 
 cd $MOBILE_PAY_TRUNK/jni
 #ln -s $MOBILE_PAY_TRUNK/BrowserPlugin/browserpluginMake $ANDROID_NDK_ROOT/apps/browserpluginMake

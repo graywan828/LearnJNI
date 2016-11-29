@@ -6,8 +6,16 @@ package com.wochacha.learnjni.utils;
 
 public class JNIUtils {
 
+    static {
+        System.loadLibrary("hello");
+    }
+
+//    public static native String get3DESKey(Context context);
+//
+//    public static native String get3DESVi(Context context);
+
     public static native String helloFromJNI();
 
-    public native int Add(int i, int y);
+    public static native int Add(int i, int y);
 
 }

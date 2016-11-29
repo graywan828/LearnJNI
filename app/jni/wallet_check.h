@@ -8,16 +8,16 @@
 extern "C" {
 #endif
 
-JNIEXPORT jstring JNICALL Java_com_wochacha_learnjni_utils_JNIUtils_helloFromJNI
-(JNIEnv *env, jclass clazz);
+JNIEXPORT jstring JNICALL Java_com_wochacha_learnjni_utils_JNIUtils_get3DESKey
+(JNIEnv *env, jclass clazz, jobject thiz);
 
 /*
  * Class:     com_shenmatouzi_shenmatouzi_utils_JNIUtils
  * Method:    get3DESVi
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jint JNICALL Java_com_wochacha_learnjni_utils_JNIUtils_Add
-(JNIEnv *env, jclass clazz, jint a,jint b);
+JNIEXPORT jstring JNICALL Java_com_wochacha_learnjni_utils_JNIUtils_get3DESVi
+(JNIEnv *env, jclass clazz, jobject thiz);
 
 jstring getSignature(JNIEnv* env, jobject thiz);
 
